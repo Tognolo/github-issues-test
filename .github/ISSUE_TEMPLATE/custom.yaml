@@ -1,6 +1,6 @@
 name: QMS issue
 description: Insert a new issue through the QMS form
-labels: ["Priority: Medium", "Status: Discussion", "bug"]
+labels: ["Priority: Medium", "Status: Discussion", "Type: Question", "bug"]
 body:
   - type: dropdown
     id: issue-type
@@ -15,16 +15,16 @@ body:
       default: 0
     validations:
       required: true
-- type: textarea
-  id: issue-description
-  attributes:
-    label: Add a description
-  validations:
-    required: true
-- type: markdown
-  attributes:
-    value: "## Thank you for contributing to our project!"
-- type: markdown
-  attributes:
-    value: |
-      Thanks for taking the time to fill out this bug report.
+  - type: textarea
+    id: issue-description
+    attributes:
+      label: Add a description
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: "## Thank you for contributing to our project!"
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report.
