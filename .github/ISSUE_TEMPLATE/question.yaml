@@ -8,11 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Fill this informations:
-        - Title
-        - Description
-        - Assignees
-        - Priority label
+        Remember to assigne the issue and check Priority label.
   - type: textarea
     id: issue-description
     attributes:
