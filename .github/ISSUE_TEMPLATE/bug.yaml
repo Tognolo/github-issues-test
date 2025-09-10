@@ -1,0 +1,22 @@
+name: Bug
+description: Insert a new bug issue through the QMS form
+labels: ["Priority: Medium", "Status: Discussion", "Type: Bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "## Form instructions"
+  - type: markdown
+    attributes:
+      value: |
+        Fill this informations:
+        - Title
+        - Description
+        - Assignees
+        - Priority label
+  - type: textarea
+    id: issue-description
+    attributes:
+      label: Description
+      description: Add a description
+    validations:
+      required: true
