@@ -15,12 +15,12 @@ body:
       default: 0
     validations:
       required: true
-  - type: textarea
-    id: issue-description
-    attributes:
-      label: Add a description
-    validations:
-      required: true
+- type: textarea
+  id: issue-description
+  attributes:
+    label: Add a description
+  validations:
+    required: true
 - type: markdown
   attributes:
     value: "## Thank you for contributing to our project!"
