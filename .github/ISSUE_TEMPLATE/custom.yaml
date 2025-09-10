@@ -2,6 +2,19 @@ name: QMS issue
 description: Insert a new issue through the QMS form
 labels: ["Priority: Medium", "Status: Discussion", "Type: Question", "bug"]
 body:
+  - type: markdown
+    attributes:
+      value: "## Form instructions"
+  - type: markdown
+    attributes:
+      value: |
+        Fill this informations:
+        - title
+        - type
+        - description
+        - assignees
+        
+        Check labels before submit.
   - type: dropdown
     id: issue-type
     attributes:
@@ -12,7 +25,7 @@ body:
         - Bug
         - Question
         - Refactor
-      default: 0
+      # default: 0
     validations:
       required: true
   - type: textarea
