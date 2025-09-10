@@ -1,5 +1,5 @@
 name: Question
-description: Insert a new bug issue through the QMS form
+description: Insert a new question issue through the QMS form
 labels: ["Priority: Medium", "Status: Discussion", "Type: Question"]
 body:
   - type: markdown
